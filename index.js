@@ -1,25 +1,51 @@
-var string = "hello"
-var names = "paras"
-var age = 999
-var message = "nothing"
-var temp = `my name is ${name} and he is ${age} year old.`
+var str = 'paras is a string my name is paras'
+console.log(str);
 
-console.log(string + name + message);
-console.log(temp);
+let position = str.indexOf('is') /* first is */
+position = str.lastIndexOf('is') /* last is */
+// position = str.slice(1,2)
+position = str.substr(1,2)
+position = str.replace('paras','replaced')  /* replace first paras */
+position = str.replace(/paras/g,'replaced') /* replace all paras */
+console.log(position)
 
-var len = names.length
-len = names.length
-len = names.charAt(0)
-len = names.indexOf("r")
-console.log(len);
+let paras = ' GOOD MORNING '
+let paras2 = ' GOOD NIGHT '
+console.log(paras.concat(paras2));
+let text = document.getElementById('demo').innerText
 
-console.log(string +"\n"+ names)
-console.log(string +"\\"+ names)
-console.log(string +"\b"+ names)
 
-// creating string with the help of constructor
-var string2 = new String('hi ')
-console.log( string2 );
-console.log(typeof string2);
 
-document.getElementById('heading').innerHTML = `<h1> this is heading</h1>`
+let string01 = '    this is another    string        '
+let removeExtraspaces = string01.trim()
+console.log(string01)
+
+console.log(removeExtraspaces)
+
+let char = paras.charAt(8)
+console.log(char);
+
+
+
+
+
+
+
+
+
+const replaced =()=>{
+    console.log('hi')
+
+    let result = text.replace(/is/g, 'PARAS' )
+    result = text.slice(0,100)
+    result = text.substr(1,100)
+    result = text.replace(/is/g, 'PARAS' )
+    document.getElementById('demo').innerText = result
+}
+
+  
+
+
+
+
+
