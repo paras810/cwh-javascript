@@ -1,69 +1,25 @@
-console.log("hello world")
+var string = "hello"
+var names = "paras"
+var age = 999
+var message = "nothing"
+var temp = `my name is ${name} and he is ${age} year old.`
 
-var a = 78;
-var b = 'paras'
- c =  23.44
- console.log(+c);
+console.log(string + name + message);
+console.log(temp);
 
- //Operators in js
- //  In 3 + 4 '+' is the operators and 3,4 are oprands 
-//  1. unary operators - It has single operand (c = -c)
-// examaples of unary operators
-c = -c
-console.log( "example of unary operators " + c);
+var len = names.length
+len = names.length
+len = names.charAt(0)
+len = names.indexOf("r")
+console.log(len);
 
-// 2. Binary operator - it has two operand (c = c+5 )
-// example of binary operator
-c = c+5
-console.log("example of  binary operators " + c);
+console.log(string +"\n"+ names)
+console.log(string +"\\"+ names)
+console.log(string +"\b"+ names)
 
-// some arithmetic operators 
-let n1 = 2
-let n2 = 5
+// creating string with the help of constructor
+var string2 = new String('hi ')
+console.log( string2 );
+console.log(typeof string2);
 
-// console.log("the value of n1 + n2 " + n1 + n2);
-console.log("the value of n1 + n2 is " +( n1 + n2));
-console.log("the value of n1 - n2 is " +( n1 - n2));
-console.log("the value of n1 * n2 is " +( n1 * n2));
-console.log("the value of n1 / n2 is " +( n1 / n2));
-
-console.log("the value of n1 ** n2 is " +( n1 ** n2));
-
-// understand n++
-console.log("the value of n1 ++ is " +( n1 ++ ));
-console.log("the value of n1 ++ is " +( n1 ++ ));
-p1=1
-p1++
-p1++
-p1++
-console.log(p1);
-
-o1=1
-o1--
-console.log(o1--);
-
-// console.log("the value of n1 ** n2 is " +( n1 ** n2));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let number = 10
-number ++
-console.log(number);
+document.getElementById('heading').innerHTML = `<h1> this is heading</h1>`
