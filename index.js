@@ -1,62 +1,24 @@
-let arr = ['paras',true,null, 'end']
-// arr.push('push')
-// arr.unshift('new array')
-// for (i=0; i<arr.length; i++){
-//   console.log(arr[i])
-// }
+let main = document.getElementById('main')
+console.log(main)
 
-for (let i = 0; i<5; i++) {
-//    console.log( arr[i])
-   console.log(i)
-    
-}
+let nav = document.getElementById('nav')
+console.log(nav);
+// console.log(nav.innerHTML);
+// console.log(nav.innerText);
+// nav.innerText = 'dom'
 
-// old way 
-let students =['paras', 'anuj', 'rohan', 'mohan', 'rocky']
+let cont = document.getElementsByClassName('cont')
+//  cont = document.querySelectorAll('.cont')
+console.log(cont)
+console.log(cont[0])
+console.log(cont[1])
+cont[1].innerHTML = 'hi'
 
+let moreSelectors = document.querySelector('div + p')
+moreSelectors.innerHTML = "more-selectors"
 
-for (let index = 0; index < students.length; index++) {
-    const element = students[index];
-    console.log( 'how are you ? ' + element)
-}
+let anotherSelector = document.querySelector('#nav > li ')
+anotherSelector.innerHTML = "another-selectors"
 
-//modern js
-students.forEach(e => {
-    console.log( 'HOW ARE YOU ? ' + e)
-});
-//use this loop to iterate over array in js
-for ( i of students) {
-    console.log( 'for of loop ' + i)
-}
-
-let object ={
-    name: 'paras',
-    age: 9999,
-    live: 'mars'
-}
-
-//use this loop to iterate over objects in js
-for ( i in object) {
- 
-        const e = object[i];
-        console.log( 'for in loop ' + e);
-        
-   
-}
-
-// while loop
- let p = 0
-while (p < students.length){
-    console.log(p);
-    p++;
-
-}
-
-//do while loop
- let j= 0
- j= 10
-do {
-    console.log('do while loop ' + j);
-   j++
-} while (j < students.length);
-
+let anotherSelectorAll = document.querySelectorAll('#nav > li ')
+anotherSelectorAll[3].innerHTML = "another-selectors-all"
