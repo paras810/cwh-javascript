@@ -1,50 +1,32 @@
-const greet  =(name , age, live)=>{
-return console.log('hello good morning ' + name +age + live);
-}
-
-let timeOut = setTimeout(() => {
-    greet('paras ', 999 , ' mars')
-}, 2000, );
-
-// console.log(timeOut);
-// clearTimeout(2)
-
-clearTimeout(timeOut)
 
 
-// or 
-// setTimeout(greet, 2000 , 'paras ', 999 , ' mars')
-
-
-// let interval = setInterval(greet, 1000 , 'paras ', 999 , ' mars');
-// console.log(interval);
-
-// clearInterval(3)
-
-setTimeout(() => {
-    // clearInterval(3)
-}, 10000);
-
-
-
- 
-
-
-const printTime = ()=>{
-let timee = document.getElementById('time')
-   let time = new Date()
-   let hr = time.getHours()
-   let min = time.getMinutes()
-   let sec = time.getSeconds()
-   let currentTime = hr + ':' +min + ":" + sec;
-   return( timee.innerHTML = currentTime
-   )
-
+const printTime = () => {
+    date = new Date()
+    hr = date.getHours()
+    hr = hr<= 10 ? '0'+hr : hr
+    amPm = hr<=12? ' AM':' PM'
+    min = date.getMinutes()
+    min = min<10? '0'+min: min
+    sec =  date.getSeconds()
+    sec = sec<10? '0'+sec: sec
+    showTime = hr + ":" + min + ":" + sec + amPm
+    document.getElementById('time').innerText = showTime
 
 }
-setInterval(printTime,  1000);
 
+setInterval(printTime, 1000);
 
+const printDate = ()=>{
+ datee = new Date()
+ day = datee.getDay()
+ mnth = datee.getMonth()
+ year = datee.getFullYear()
+ showdate = day + "/"+mnth+"/"+year
 
+document.getElementById('date').innerHTML = showdate
+}
 
+setInterval(() => {
+    printDate()
+}, 1000);
 
