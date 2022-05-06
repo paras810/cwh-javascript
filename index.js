@@ -1,11 +1,24 @@
+let obj =  {
+name: 'ap',
+age: 93,
+live: 'he',
+greet: 'bye'
+}
+console.log(obj)
+ let myJsonStr = JSON.stringify(obj)
+console.log(myJsonStr)
+
+let myJsonStr2 = myJsonStr.replace('ap','paras').toUpperCase()
+console.log(myJsonStr2)
+
+let d = JSON.parse(myJsonStr2)
+console.log(d);
 
 
- 
-  // console.log(rN1_100);
-
-  const rNo = (a, b)=>{
-    //  a = 1
-    //  b= 100
-    let rN1_100 = Math.floor(a + (b - a)*Math.random())
-   document.getElementById('time').innerHTML = rN1_100
-  }
+// errors
+let done =`{"ok":"false","ok2":true,"ok3":"null","ok4":"undefined"}
+`
+let z = JSON.parse(done)
+console.log(z);
+let z2 = JSON.stringify(z)
+console.log(z2);
