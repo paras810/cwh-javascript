@@ -7,14 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>time</title>
     <style>
-       
+       .container {
+        font-size: 23px;
+        background-color: blanchedalmond;
+        border: 2px solid grey;
+        padding: 34px;
+        margin: 4px;
+        text-align: center;
+    }
+
+    #time {
+        font-weight: bold;
+    }
+
     </style>
 </head>
 
 <body>
     <div class="container ">
-        date : <span id="date"> </span> <br> <br>
-        time: <span id="time"> </span>
+        <div class="container">
+            Current time is <span id="time"></span>
+        </div>
     </div>
 
     <script src="./index.js"></script>
