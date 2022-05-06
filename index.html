@@ -6,26 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js</title>
+    <style>
+        *{
+            transition: all 1s linear;
+        }
+        .container{
+            background-color: azure;
+           
+        }
+        #btn{
+            border: none;
+            color: white;
+            background-color: blue;
+            padding: .7rem 1.2rem;
+            font-size: 19px;
+            cursor: pointer;
+          
+        }
+      
+        .para{
+            display: none;
+           
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container" id="main">
-
-        <h1 id="demo">js</h1>
-        <ul id="nav">
-            <li>Home</li>
-            <li>about</li>
-            <li>contact</li>
-            <li>more about us</li>
-        </ul>
+    <div class="container" id="cont">
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos suscipit architecto placeat aliquid provident ipsum cupiditate nesciunt blanditiis repellat sint, ullam quia est magnam? Corporis non, illo, commodi voluptatum odio, sapiente sequi eos optio fugit dolor accusantium laboriosam incidunt provident. Consequuntur dicta maxime beatae eos dolore officiis, eum, atque dolores nobis nemo suscipit ut facilis!</p>
     </div>
-
-    <p class="cont">
-        cont1
-    </p>
-    <div class="cont">
-        cont2
-    </div>
+    <button id="btn">show / hide</button>
 
     <script src="./index.js"></script>
 

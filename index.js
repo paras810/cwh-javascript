@@ -1,24 +1,51 @@
-let main = document.getElementById('main')
-console.log(main)
+// events
+/* 
+click
+contextmenu
+mouseover/mouseout
+mouseup/mousedown
+mousemove
 
-let nav = document.getElementById('nav')
-console.log(nav);
-// console.log(nav.innerHTML);
-// console.log(nav.innerText);
-// nav.innerText = 'dom'
+submit
+focus
 
-let cont = document.getElementsByClassName('cont')
-//  cont = document.querySelectorAll('.cont')
-console.log(cont)
-console.log(cont[0])
-console.log(cont[1])
-cont[1].innerHTML = 'hi'
+DOMContentLoaded
 
-let moreSelectors = document.querySelector('div + p')
-moreSelectors.innerHTML = "more-selectors"
+transitionend
 
-let anotherSelector = document.querySelector('#nav > li ')
-anotherSelector.innerHTML = "another-selectors"
+*/
 
-let anotherSelectorAll = document.querySelectorAll('#nav > li ')
-anotherSelectorAll[3].innerHTML = "another-selectors-all"
+let btn = document.getElementById('btn')
+let para = document.getElementById('para')
+
+
+btn.addEventListener('click',()=>{
+    // para.classList.toggle('para')
+    if (para.style.display === 'none') {
+        para.style.display = 'block'
+    } else {
+         para.style.display = 'none'
+    }
+})
+
+para.addEventListener('dblclick',()=>{
+    // console.log('double click');
+ })
+para.addEventListener('mouseover',()=>{
+    // console.log('mouseover');
+ })
+ para.addEventListener('mousedown',()=>{
+    // console.log('mousedown');
+ })
+ para.addEventListener('mouseenter',()=>{
+    // console.log('mouse enter');
+ })
+ para.addEventListener('mouseleave',()=>{
+    // console.log('mouse leave');
+ })
+ para.addEventListener('mouseout',()=>{
+    // console.log('mouse out');
+ })
+ para.addEventListener('mousemove',()=>{
+    // console.log('mouse move');
+ })
