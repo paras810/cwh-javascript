@@ -1,51 +1,50 @@
-// events
-/* 
-click
-contextmenu
-mouseover/mouseout
-mouseup/mousedown
-mousemove
+const greet  =(name , age, live)=>{
+return console.log('hello good morning ' + name +age + live);
+}
 
-submit
-focus
+let timeOut = setTimeout(() => {
+    greet('paras ', 999 , ' mars')
+}, 2000, );
 
-DOMContentLoaded
+// console.log(timeOut);
+// clearTimeout(2)
 
-transitionend
-
-*/
-
-let btn = document.getElementById('btn')
-let para = document.getElementById('para')
+clearTimeout(timeOut)
 
 
-btn.addEventListener('click',()=>{
-    // para.classList.toggle('para')
-    if (para.style.display === 'none') {
-        para.style.display = 'block'
-    } else {
-         para.style.display = 'none'
-    }
-})
+// or 
+// setTimeout(greet, 2000 , 'paras ', 999 , ' mars')
 
-para.addEventListener('dblclick',()=>{
-    // console.log('double click');
- })
-para.addEventListener('mouseover',()=>{
-    // console.log('mouseover');
- })
- para.addEventListener('mousedown',()=>{
-    // console.log('mousedown');
- })
- para.addEventListener('mouseenter',()=>{
-    // console.log('mouse enter');
- })
- para.addEventListener('mouseleave',()=>{
-    // console.log('mouse leave');
- })
- para.addEventListener('mouseout',()=>{
-    // console.log('mouse out');
- })
- para.addEventListener('mousemove',()=>{
-    // console.log('mouse move');
- })
+
+// let interval = setInterval(greet, 1000 , 'paras ', 999 , ' mars');
+// console.log(interval);
+
+// clearInterval(3)
+
+setTimeout(() => {
+    // clearInterval(3)
+}, 10000);
+
+
+
+ 
+
+
+const printTime = ()=>{
+let timee = document.getElementById('time')
+   let time = new Date()
+   let hr = time.getHours()
+   let min = time.getMinutes()
+   let sec = time.getSeconds()
+   let currentTime = hr + ':' +min + ":" + sec;
+   return( timee.innerHTML = currentTime
+   )
+
+
+}
+setInterval(printTime,  1000);
+
+
+
+
+
