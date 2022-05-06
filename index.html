@@ -7,27 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>time</title>
     <style>
-       .container {
-        font-size: 23px;
-        background-color: blanchedalmond;
-        border: 2px solid grey;
-        padding: 34px;
-        margin: 4px;
-        text-align: center;
+     *{
+         margin: 0;
+         padding: 0;
+         /* box-sizing: border-box; */
+     } 
+   .container{
+       background-color: rgb(197, 240, 187);
+       width: 19vw;
+       height: auto;
+       border: 2px solid blue;
+       padding: 1rem ;
+       text-align: center;
+     margin: 1rem auto;
+   }
+   button{
+       border: 2px solid rgb(23, 251, 23);
+       background-color:  rgb(23, 251, 23);
+    padding: 0 10px;
+       margin-top: 1rem;
+       cursor: pointer;
+       font-weight: 100;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       transition: all .5s ease;
+   }
+   button:hover{
+    background-color: white;
+    color: rgb(23, 251, 23);
+   }
+   #time{
+       margin-left: 1rem;
+       font-weight: 900;
+       font-size: 20px;
+       color: cornflowerblue;
+    font-family: cursive;
+    
+   }
+   .cont{
+       display: flex;
+       flex-wrap: wrap;
+       gap: .4rem;
+   }
+@media screen and (max-width: 700px) {
+    .cont{
+        flex-direction: column;
     }
-
-    #time {
-        font-weight: bold;
-    }
-
+    .container {
+    background-color: rgb(197, 240, 187);
+    width: 64vw;
+    height: auto;
+    border: 2px solid blue;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 1.9rem;
+}
+button {
+    padding: 9px 8px;
+    font-size: 1.6rem;
+    font-family: auto;
+}
+#time {
+    margin-left: 0rem;
+    font-weight: 900;
+    font-size: 47px;
+    color: cornflowerblue;
+    font-family: cursive;
+}
+}
     </style>
 </head>
 
 <body>
-    <div class="container ">
+    <div class="cont ">
+
         <div class="container">
-            Current time is <span id="time"></span>
+            Random no between 1-100 : <span  id="time" >--</span>
+            <div><button onclick="rNo(1,101)">Genreate Random</button></div>
         </div>
+
+        <div class="container">
+            Random no between 20-80 : <span  id="time" >--</span>
+            <div><button onclick="rNo(20,81)">Genreate Random</button></div>
+        </div>
+
+        <div class="container">
+            Random no between 5-50 : <span  id="time" >--</span>
+            <div><button onclick="rNo(5,51)">Genreate Random</button></div>
+        </div>
+
+        <div class="container">
+            Random no between 45-65 : <span  id="time" >--</span>
+            <div><button onclick="rNo(45,66)">Genreate Random</button></div>
+        </div>
+        
     </div>
 
     <script src="./index.js"></script>
